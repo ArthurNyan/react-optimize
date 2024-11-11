@@ -1,0 +1,39 @@
+.link {
+  cursor: pointer;
+  color: var(--dark500);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  text-decoration-color: var(--dark300);
+
+  &[data-font="dark"] {
+    color: var(--dark900);
+    text-decoration: none;
+  }
+  &[data-font="light"] {
+    color: var(--dark500);
+  }
+  &[data-font="default"] {
+    color: var(--dark700);
+  }
+  &[data-font="primary"] {
+    color: var(--primary700);
+  }
+
+  &:hover {
+    text-decoration-color: var(--dark500);
+    transition: color 0.1s;
+
+    &[data-font="dark"] {
+      color: var(--dark500);
+    }
+    &[data-font="light"] {
+      color: var(--dark500);
+    }
+    &[data-font="default"] {
+      color: var(--dark700);
+    }
+    &[data-font="primary"] {
+      color: var(--primary700);
+    }
+  }
+}
